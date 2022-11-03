@@ -19,7 +19,7 @@ loop = asyncio.get_event_loop()
 boot = time.time()
 
 mongo = MongoClient(config.MONGO_DB_URI)
-db = mongo.AFK
+db = mongo.bot
 
 botid = 0
 botname = ""
@@ -31,7 +31,7 @@ cleanmode = {}
 SUDOERS = config.SUDO_USER
 
 app = Client(
-    ":YukkiAFKBot:",
+    ":GroupXBot:",
     config.API_ID,
     config.API_HASH,
     bot_token=config.BOT_TOKEN,
